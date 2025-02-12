@@ -2,11 +2,11 @@ import { Text, View, StyleSheet, Image, ImageBackground, Dimensions, TouchableOp
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function Index() {
-  return ( 
+  return (
     // entire app wrapped inside SafeAreaProvider and SafeAreaView to prevent UI overlap with device notches.
-    <SafeAreaProvider>                           
+    <SafeAreaProvider>
       <SafeAreaView style={{ flex: 1 }}>
-      {/* App BackgroundImage */}
+        {/* App BackgroundImage */}
         <ImageBackground
           source={require("@/assets/images/background-image.png")}
           style={styles.background}
@@ -18,7 +18,7 @@ export default function Index() {
               <Image source={require("@/assets/images/Logo.png")} />
             </View>
 
-             {/* Hero Section */}
+            {/* Hero Section */}
             <View style={styles.textGroup}>
               <Text style={styles.textLarge}>Find your favorite place here</Text>
               <Text style={styles.textSmall}>The best prices for over 2 </Text>
