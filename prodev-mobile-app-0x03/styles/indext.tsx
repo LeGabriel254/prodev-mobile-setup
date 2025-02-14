@@ -13,9 +13,9 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     marginTop: 11
   },
-  largeTetxt: {
+  largeText: {
     fontSize: 40,
-    fontWeight: 700
+    fontWeight: 700,
   },
   smallText: {
     fontSize: 12,
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     color: '#7E7B7B',
     marginBottom: 7
   },
-  inputFiel: {
+  inputField: {
     borderWidth: 1,
     borderRadius: 10,
     height: 50,
@@ -70,16 +70,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 10
   },
-  SocialMediaButtonText: {
+  socialMediaButtonText: {
     fontSize: 18,
     color: '#0D0D0D',
     fontWeight: 400
   },
-  SocialMediaButtonGroup: {
+  socialMediaButtonGroup: {
     gap: 15,
     marginTop: 25
   },
-  divideGroup: {
+  dividerGroup: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
@@ -87,12 +87,12 @@ const styles = StyleSheet.create({
   },
   divider: {
     borderWidth: 0.5,
-    borderColor: '#c2c2c2',
+    borderColor: "#c2c2c2",
     flex: 1
   },
   dividerText: {
     fontSize: 17,
-    color: '#C2C2C2'
+    color: "#C2C2C2",
   },
   subTextGroup: {
     flexDirection: 'row',
@@ -107,9 +107,11 @@ const styles = StyleSheet.create({
   },
   subTextJoin: {
     fontSize: 18,
-    color: '#FFA800'
+    color: '#FFA800',
+    fontWeight: 600
   }
 });
+
 
 export {
   styles
