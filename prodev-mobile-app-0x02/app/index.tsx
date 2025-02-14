@@ -6,7 +6,7 @@ export default function Index() {
     // entire app wrapped inside SafeAreaProvider and SafeAreaView to prevent UI overlap with device notches.
     <SafeAreaProvider>
       <SafeAreaView style={{ flex: 1 }}>
-        
+
         {/* App BackgroundImage */}
         <ImageBackground
           source={require("@/assets/images/background-image.png")}
