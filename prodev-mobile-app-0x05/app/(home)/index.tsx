@@ -1,4 +1,15 @@
-import { Text, View } from "react-native";
+import PropertyListing from "@/components/PropertyListing";
+import { styles } from "@/styles/_mainstyle";
+import { Feather } from "@expo/vector-icons";
+import {
+  View,
+  Text,
+  TextInput,
+  Image,
+  ScrollView,
+  Dimensions,
+  TouchableHighlight,
+} from "react-native";
 
 export default function Index() {
   return (
