@@ -1,46 +1,39 @@
 import { Text, TextInput, View, TouchableOpacity, Image } from "react-native";
-import { styles } from "@/styles/index";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
+import { styles } from "@/styles/index";
+import { HEROLOGO } from "@/constants";
 
-export default function Index() {
+export default function Sign() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
-        {/* arrow-back */}
-        <View style={styles.navGroup}>
+        <View style={styles.iconsection}>
           <Ionicons name="arrow-back" size={25} />
-          <Image source={require('@/assets/images/_logo.png')} />
+          <Image source={HEROLOGO} />
         </View>
-
-        {/* Instruction */}
-        <Text style={styles.largeText}>Sign in to your</Text>
-        <Text style={styles.largeText}>Account</Text>
-        <Text style={styles.smallText}>
+        <Text style={styles.titleText}>Sign in to your</Text>
+        <Text style={styles.titleText}>Account</Text>
+        <Text style={styles.subText}>
           Enter your email and password to sign in.
         </Text>
 
-        {/* Form Group */}
         <View style={styles.formGroup}>
-          {/* Email */}
           <View>
-            <Text style={styles.placeholderText}>Email</Text>
-            <TextInput keyboardType="email-address" style={styles.inputField} />
+            <Text style={styles.formLabel}>Email</Text>
+            <TextInput keyboardType="email-address" style={styles.formControl} />
           </View>
-          {/* Password */}
           <View style={{ marginTop: 20 }}>
-            <Text style={styles.placeholderText}>Password</Text>
-            <View style={styles.passwordGroup}>
+            <Text style={styles.formLabel}>Password</Text>
+            <View style={styles.formPasswordControl}>
               <TextInput style={{ flex: 1 }} />
               <FontAwesome name="eye-slash" size={24} color="#7E7B7B" />
             </View>
           </View>
-          {/* Forgot Password */}
           <Text style={styles.forgotPasswordText}>Forgot password?</Text>
         </View>
 
-        {/* Signing in Buttons */}
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.primaryButton}>
           <Text style={styles.buttonText}>Sign in</Text>
         </TouchableOpacity>
 
@@ -58,7 +51,6 @@ export default function Index() {
           ></View>
         </View>
 
-        {/* Authentication Options */}
         <View style={styles.socialMediaButtonGroup}>
           <TouchableOpacity style={styles.socialMediaButton}>
             <View
@@ -90,8 +82,7 @@ export default function Index() {
             </View>
           </TouchableOpacity>
         </View>
-        
-        {/* New users */}
+
         <View style={styles.subTextGroup}>
           <Text style={styles.subText}>Don't have an account?</Text>
           <Text style={styles.subTextJoin}>Join now</Text>
